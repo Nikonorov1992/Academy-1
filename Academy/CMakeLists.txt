@@ -4,6 +4,6 @@
 cmake_minimum_required (VERSION 3.8)
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (Academy "Academy.cpp" )
+add_executable (Academy "Academy.cpp"  "Person.h" "Student.h" "Teacher.h" "Manager.h")
 
 # TODO: Добавьте тесты и целевые объекты, если это необходимо.
