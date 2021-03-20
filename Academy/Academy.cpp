@@ -6,6 +6,7 @@
 #include "Manager.h"
 
 #include "menu.h"
+#include "cli.h"
 
 using namespace std;
 
@@ -26,16 +27,22 @@ system("chcp 65001");
 
         switch (select) {
             case '1': // 1. Добавить студента
+                InputStudent(students);
                 break;
             case '2': // 2. Добавить преподавателя
+                //TODO Добавить метод ввода данных о преподавателе
                 break;
             case '3': // 3. Добавить менеджера
+                //TODO Добавить метод ввода данных о менеджере
                 break;
             case '4': // 4. Показать всех студентов
+                ShowStudents(students);
                 break;
             case '5': // 5. Показать всех преподавателей
+                ShowTeachers(teachers);
                 break;
             case '6': // 6. Показать всех менеджеров
+                //TODO Добавить метод показа всех менеджеров
                 break;
             case '0': // 0. Выход
                 exit = true;
