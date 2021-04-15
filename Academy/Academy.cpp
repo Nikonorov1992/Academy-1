@@ -12,6 +12,7 @@ using namespace std;
 
 int main()
 {
+
 system("chcp 65001");
 
     vector<Student> students;
@@ -30,6 +31,7 @@ system("chcp 65001");
                 InputStudent(students);
                 break;
             case '2': // 2. Добавить преподавателя
+                InputTeacher(teachers);
                 //TODO Добавить метод ввода данных о преподавателе
                 break;
             case '3': // 3. Добавить менеджера
